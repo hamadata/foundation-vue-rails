@@ -49,9 +49,9 @@ document.addEventListener('turbolinks:load', () => {
   const app = new Vue({
     el: '#hello',
     data: {
-      message: "Can you say hello?"
+      message: "Can you say hello?",
+      picked: "Email"	    
     },
     components: { App }
   })
-  console.log('hello vue')	
 })

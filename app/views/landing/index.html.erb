@@ -2,4 +2,22 @@
 <div id='hello'>
   {{message}}
    <app></app>
+   <form>
+				     <p>Please select your preferred contact method:</p>
+ <div>
+	     here: {{picked}}
+      <input type="radio" id="contactChoice1"
+	      name="contact" value="email" v-model="picked">
+       <label for="contactChoice1">Email</label>
+	   <input type="radio" id="contactChoice2"
+	       name="contact" value="phone" v-model="picked">
+	       <label for="contactChoice2">Phone</label>
+	   <input type="radio" id="contactChoice3"
+		name="contact" value="mail" v-model="picked">
+	       <label for="contactChoice3">Mail</label>
+		 </div>
+		   <div>
+	       <button type="submit">Submit</button>
  </div>
+   </form>
+</div>
